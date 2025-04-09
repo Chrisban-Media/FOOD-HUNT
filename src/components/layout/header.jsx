@@ -1,7 +1,19 @@
+import logo from "../../assets/images/logo.png";
+
 export default function Header() {
   return (
-    <header className="p-4 w-full max-w-6xl mx-auto bg-black text-white">
-      Hello! Is this my header? Yes it is!
+    <header className="p-4 w-full max-w-6xl mx-auto">
+      {/* logo */}
+      <div>
+        <img src={logo} alt="Food Hut logo" />
+      </div>
+
+      <nav></nav>
+
+      {/* hamburger menu */}
+      <div>
+        <i class="ri-menu-line"></i>
+      </div>
     </header>
   );
 }
