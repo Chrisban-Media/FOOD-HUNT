@@ -2,6 +2,12 @@ import Layout from "./components/layout";
 import heroImg from "./assets/images/hero-image.png";
 import chefImg from "./assets/images/chef-image.png";
 import Button from "./components/shared/button";
+import { FoodCard } from "./components/shared/card";
+
+// Food images
+import egusi from "./assets/images/egusi.jpg";
+import okro from "./assets/images/okro-soup.jpeg";
+import jollof from "./assets/images/jollof.jpg";
 
 function App() {
   return (
@@ -42,7 +48,7 @@ function App() {
       </section>
 
       {/* special offers */}
-      <section className="p-4 text-center grid gap-4">
+      <section className="p-4 text-center grid gap-4 max-w-4xl mx-auto">
         <h2 className="font-bold text-4xl">
           Today's <span className="text-[var(--primary-color)]">Special</span>{" "}
           Offers
@@ -54,7 +60,25 @@ function App() {
         </p>
 
         {/* menu */}
-        <div></div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <FoodCard
+            title="Egusi"
+            description="Premium delicious, and healthy egusi. Ericha amicha aka"
+            rating="4.7"
+            imageSrc={egusi}
+          />
+          <FoodCard
+            title="Jollof Rice"
+            description="Only Nigerians make the best jollof. Come and eat!"
+            rating="3.4"
+            imageSrc={jollof}
+          />
+          <FoodCard
+            title="Okro"
+            description="A delicious soup for wicked Igbo people. Made with fresh fish."
+            imageSrc={okro}
+          />
+        </div>
       </section>
 
       {/* services */}
