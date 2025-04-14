@@ -20,11 +20,11 @@ export function FoodCard({
 }) {
   return (
     <div className="mt-20">
-      <div className="bg-linear-to-t from-[#f547474b] to-[#f5474710] p-4 rounded-3xl flex flex-col gap-8 h-full">
+      <div className="bg-linear-to-t from-[#f547474b] to-[#f5474710] p-4 rounded-3xl flex flex-col gap-8 h-full min-h-96">
         {/* image & price */}
         <div>
           {/* image */}
-          <div className="w-36 h-36 -mt-20 mx-auto bg-gray-400 rounded-full overflow-hidden">
+          <div className="w-48 h-48 -mt-20 mx-auto bg-gray-400 rounded-full overflow-hidden">
             <img
               src={imageSrc}
               alt={title}
@@ -70,10 +70,10 @@ export function FoodCard({
 
         {/* food title and description */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl font-bold text-[var(--primary-color)]">
+          <h3 className="text-2xl font-bold text-[var(--primary-color)]">
             {title}
           </h3>
-          <p className="w-4/5 text-sm mx-auto">{description}</p>
+          <p className="w-4/5 mx-auto">{description}</p>
         </div>
       </div>
 

@@ -48,7 +48,7 @@ function App() {
       </section>
 
       {/* special offers */}
-      <section className="p-4 text-center grid gap-4 max-w-4xl mx-auto">
+      <section className="p-4 text-center grid gap-4 max-w-5xl mx-auto">
         <h2 className="font-bold text-4xl">
           Today's <span className="text-[var(--primary-color)]">Special</span>{" "}
           Offers
@@ -60,7 +60,7 @@ function App() {
         </p>
 
         {/* menu */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <FoodCard
             title="Egusi"
             description="Premium delicious, and healthy egusi. Ericha amicha aka"
@@ -75,7 +75,7 @@ function App() {
           />
           <FoodCard
             title="Okro"
-            description="A delicious soup for wicked Igbo people. Made with fresh fish."
+            description="A delicious soup that goes well with all types of swallow like eba, fufu, or semo."
             imageSrc={okro}
           />
         </div>
