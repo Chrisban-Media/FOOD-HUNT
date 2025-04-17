@@ -5,3 +5,11 @@ export default function Button({ children }) {
     </button>
   );
 }
+
+export function TransparentButton({ children }) {
+  return (
+    <button className="bg-none border-gray border-2 rounded-full py-2 px-4">
+      {children}
+    </button>
+  );
+}
